@@ -35,6 +35,13 @@ metadata:
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 ```
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: tiller
+  namespace: kube-system
+---
+apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
   name: tiller
