@@ -60,7 +60,7 @@ Now you can initialize the helm server part. This will create a service and a de
 
 **Istio setup**
 ```
-helm repo add istio.io  [https://storage.googleapis.com/istio-release/releases/1.1.2/charts/](https://storage.googleapis.com/istio-release/releases/1.1.1/charts/) 
+helm repo add istio.io https://storage.googleapis.com/istio-release/releases/1.1.2/charts/ 
 helm repo update
 helm install istio.io/istio-init —name istio-init —namespace istio-system
 ```
