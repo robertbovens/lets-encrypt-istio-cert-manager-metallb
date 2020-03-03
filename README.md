@@ -62,14 +62,14 @@ Now you can initialize the helm server part. This will create a service and a de
 ```
 helm repo add istio.io https://storage.googleapis.com/istio-release/releases/1.1.2/charts/ 
 helm repo update
-helm install istio.io/istio-init —name istio-init —namespace istio-system
+helm install istio.io/istio-init --name istio-init --namespace istio-system
 ```
 
 ```
 helm install istio.io/istio \
-       —name istio \
-       —namespace istio-system \
-       —set gateways.istio-ingressgateway.sds.enabled=true
+       --name istio \
+       --namespace istio-system \
+       --set gateways.istio-ingressgateway.sds.enabled=true
 ```
 
 **Cert-manager**
